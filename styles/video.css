@@ -1,0 +1,135 @@
+
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  font-family: roboto;
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+.video-author,
+.video-stats {
+  color: rgb(76, 76, 76);
+  display: block;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.video-time {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+}
+
+
+.channel-picture {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+.channel-picture .profile-picture {
+  width: 36px;
+  object-fit: cover;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.channel-picture .extra-information-box {
+  width: 150px;
+  border: none;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Roboto;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.channel-picture:hover .extra-information-box {
+  opacity: 1;
+}
+
+.extra-information-box img {
+  height: 45px;
+  width: 45px;
+  border-radius: 100px;
+}
+
+.extra-name {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 14px;
+}
+.subscribers-number {
+  margin-top: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+  color: rgb(93, 93, 93);
+}
